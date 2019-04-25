@@ -27,4 +27,4 @@ INSERT INTO users (email, password) VALUES
 INSERT INTO poems (title, context, user_id) VALUES
 	('titleone', 'contone', 1),   -- 1
 	('titletwo', 'conttwo', 2),  -- 2
-	('titlethree', 'contthree', 3); -- 3
+	('titlethree', 'contthree', 3);

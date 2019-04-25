@@ -4,6 +4,7 @@ import com.codecool.web.dao.PoemDao;
 import com.codecool.web.dao.database.DatabasePoemDao;
 import com.codecool.web.dto.PoemDto;
 import com.codecool.web.model.Poem;
+import com.codecool.web.model.User;
 import com.codecool.web.service.PoemService;
 import com.codecool.web.service.exception.ServiceException;
 import com.codecool.web.service.simple.SimplePoemService;

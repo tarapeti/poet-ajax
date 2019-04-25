@@ -9,20 +9,14 @@
         <c:url value="/index.js" var="indexScriptUrl"/>
         <c:url value="/login.js" var="loginScriptUrl"/>
         <c:url value="/profile.js" var="profileScriptUrl"/>
-        <c:url value="/shop.js" var="shopScriptUrl"/>
-        <c:url value="/shops.js" var="shopsScriptUrl"/>
-        <c:url value="/coupon.js" var="couponScriptUrl"/>
-        <c:url value="/coupons.js" var="couponsScriptUrl"/>
+        <c:url value="/poem.js" var="shopScriptUrl"/>
         <c:url value="/back-to-profile.js" var="backToProfileScriptUrl"/>
         <c:url value="/logout.js" var="logoutScriptUrl"/>
         <link rel="stylesheet" type="text/css" href="${styleUrl}">
         <script src="${indexScriptUrl}"></script>
         <script src="${loginScriptUrl}"></script>
         <script src="${profileScriptUrl}"></script>
-        <script src="${shopScriptUrl}"></script>
-        <script src="${shopsScriptUrl}"></script>
-        <script src="${couponScriptUrl}"></script>
-        <script src="${couponsScriptUrl}"></script>
+        <script src="${poemScriptUrl}"></script>
         <script src="${backToProfileScriptUrl}"></script>
         <script src="${logoutScriptUrl}"></script>
         <title>App</title>
@@ -42,10 +36,27 @@
     <p>Password: <span id="user-password"></span></p>
     <h2>Links</h2>
     <ul>
-        <li><a href="javascript:void(0);" onclick="onShopsClicked();">Shops</a></li>
+        <li><a href="javascript:void(0);" onclick="onPoemsClicked();">Poems</a></li>
         <li><a href="javascript:void(0);" onclick="onCouponsClicked();">Coupons</a></li>
     </ul>
 </div>
+
+<div id="poem-content" class="hidden content">
+    <h1>Poem</h1>
+    <p>ID: <span id="poem-id"></span></p>
+    <p>Title: <span id="poem-title"></span></p>
+</div>
+
+<div id="back-to-profile-content" class="hidden content">
+    <button onclick="onBackToProfileClicked();">Back to profile</button>
+</div>
+<div id="logout-content" class="hidden content">
+    <button id="logout-button">Logout</button>
+</div>
+</body>
+</html>
+
+
 <div id="shops-content" class="hidden content">
     <h1>Shops</h1>
     <table id="shops">
@@ -102,11 +113,3 @@
         <button onclick="onCouponShopsAddClicked();">Add</button>
     </form>
 </div>
-<div id="back-to-profile-content" class="hidden content">
-    <button onclick="onBackToProfileClicked();">Back to profile</button>
-</div>
-<div id="logout-content" class="hidden content">
-    <button id="logout-button">Logout</button>
-</div>
-</body>
-</html>
